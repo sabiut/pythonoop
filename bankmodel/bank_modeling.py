@@ -2,6 +2,7 @@ from abc import ABCMeta, abstractmethod, ABC
 from random import randint
 
 
+# abstract class(blueprint)
 class CustomerAccount(ABC):
     @abstractmethod
     def createNewAccount(self, customer_name, initial_deposit):
@@ -24,6 +25,7 @@ class CustomerAccount(ABC):
         return 0
 
 
+# class that implements the abstract class
 class CustomerSavingsAccounts(CustomerAccount):
 
     def __init__(self):
